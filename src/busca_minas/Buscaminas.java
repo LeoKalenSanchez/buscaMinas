@@ -1,6 +1,6 @@
 package busca_minas;
 
-import entrada.Teclado;
+import Teclado;
 
 public class Buscaminas {
 	/**
