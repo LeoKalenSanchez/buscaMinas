@@ -77,7 +77,15 @@ public class Casilla {
 		this.numeroMinas = numeroMinas;
 	}
 
-	@Override
+	/**
+	 * Metodo toString que imprime la casilla por pantalla
+	 * 
+	 * "B" si hay bandera puesta
+	 * "." si no hay bandera y no esta visible
+	 * "M" si hay mina y es visible
+	 * " " si es visible y no hay mina
+	 * numeroMinas si es visible y no esta en blanco
+	 */
 	public String toString() {
 		if (bandera) {
 			return "B";
@@ -93,9 +101,4 @@ public class Casilla {
 		}
 		return "" + numeroMinas;
 	}
-public static void main(String[] args) {
-	Casilla casilla1 = new Casilla();
-	casilla1.setBandera(true);
-	System.out.println(casilla1);
-}
 }
