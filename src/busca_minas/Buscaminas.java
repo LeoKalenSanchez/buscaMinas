@@ -1,6 +1,6 @@
 package busca_minas;
 
-import Teclado;
+import entrada.Teclado;
 
 public class Buscaminas {
 	/**
@@ -11,27 +11,25 @@ public class Buscaminas {
 		System.out.println(juego);
 		int numMenu;
 		boolean derrota = false;
-		int fila;
-		int columna;
 		do {
 			numMenu = menuOpciones();
 			switch (numMenu) {
-
+			// Salir del menu
 			case 0:
 				break;
-
+			// Descubrir casilla
 			case 1:
 				derrota = descubrirCasilla(juego);
 				break;
-
+			// Poner bandera
 			case 2:
 				ponerBandera(juego);
 				break;
-
+			// quitar bandera
 			case 3:
 				quitarBandera(juego);
 				break;
-
+			// opcion equivocada
 			default:
 				System.out.println("La opción de menú debe estar comprendida entre 0 y 3.");
 				break;
@@ -130,7 +128,6 @@ public class Buscaminas {
 		} else {
 			System.out.println("Has ganado");
 		}
-
 	}
 
 	/**
@@ -155,6 +152,6 @@ public class Buscaminas {
 		System.out.println("1 --> Descubrir");
 		System.out.println("2 --> Poner Bandera");
 		System.out.println("3 --> Quitar Bandera");
-		return Teclado.leerEntero(null);
+		return Teclado.leerEntero("");
 	}
 }
