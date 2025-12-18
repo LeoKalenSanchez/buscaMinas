@@ -4,6 +4,7 @@ import entrada.Teclado;
 
 public class Buscaminas {
 	/**
+<<<<<<< HEAD
 	 * Clase principal del juego buscaminas
 	 */
 	public static void main(String[] args) {
@@ -36,6 +37,7 @@ public class Buscaminas {
 			}
 		} while (numMenu != 0 && !derrota);
 		resolucionJuego(derrota);
+
 	}
 
 	/**
