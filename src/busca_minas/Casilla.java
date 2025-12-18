@@ -93,5 +93,9 @@ public class Casilla {
 		}
 		return "" + numeroMinas;
 	}
-
+public static void main(String[] args) {
+	Casilla casilla1 = new Casilla();
+	casilla1.setBandera(true);
+	System.out.println(casilla1);
+}
 }
