@@ -2,9 +2,22 @@ package busca_minas;
 
 import entrada.Teclado;
 
+/**
+ * Clase principal del juego buscaminas
+ * 
+ * @author Leo Kalen Sanchez
+ * @version 1.0
+ * @since 2025-12
+ */
 public class Buscaminas {
 	/**
-	 * Clase principal del juego buscaminas
+	 * Main con el menu del juego buscaminas
+	 * 
+	 * @param args
+	 * @see #confInicialJuego()
+	 * @see #descubrirCasilla(Juego)
+	 * @see #ponerBandera(Juego)
+	 * @see #quitarBandera(Juego)
 	 */
 	public static void main(String[] args) {
 		Juego juego = confInicialJuego();
