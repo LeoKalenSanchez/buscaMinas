@@ -14,10 +14,10 @@ public class Buscaminas {
 	 * Main con el menu del juego buscaminas
 	 * 
 	 * @param args
-	 * @see #confInicialJuego()
-	 * @see #descubrirCasilla(Juego)
-	 * @see #ponerBandera(Juego)
-	 * @see #quitarBandera(Juego)
+	 * @see #confInicialJuego() --> Metodo que configura realiza una configuracion inicial del objeto de Clase Juego
+	 * @see #descubrirCasilla(Juego) --> Metodo que llama al metodo descubrirCasilla de la Clase Juego
+	 * @see #ponerBandera(Juego) --> Metodo que llama al metodo ponerBandera de la Clase Juego
+	 * @see #quitarBandera(Juego) --> Metodo que llama al metodo quitarBandera de la Clase Juego
 	 */
 	public static void main(String[] args) {
 		Juego juego = confInicialJuego();
