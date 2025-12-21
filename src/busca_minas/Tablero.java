@@ -1,6 +1,6 @@
 package busca_minas;
 
-
+import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -44,6 +44,18 @@ public class Tablero {
 	
 	public Casilla[][] getTablero() {
 		return tablero;
+	}
+	
+	public int getMinas() {
+		return numMinas;
+	}
+	
+	public int getFilas() {
+		return numFilas;
+	}
+	
+	public int getColumnas() {
+		return numColumnas;
 	}
 
 	/**
@@ -109,6 +121,7 @@ public class Tablero {
 	 * Muestra el tablero de juego
 	 */
 	public String toString() {
+		//TODO Fila de numeros superior e inferior
 		String cadena = "";
 		for (int i = 0; i < tablero.length; i++) {
 			cadena += i + "|";
